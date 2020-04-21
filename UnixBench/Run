@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/data/local/perl/bin/perl5.22.0 -w
 
 use strict;
 
@@ -1900,7 +1900,6 @@ sub main {
     my @creatingDirectories = ( ${TMPDIR}, ${RESULTDIR} );
     createDirrectoriesIfNotExists(@creatingDirectories);
 
-    preChecks();
     my $systemInfo = getSystemInfo();
 
     # If the number of copies to run was not set, set it to 1
